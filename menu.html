@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pizza Restaurant">
+    <meta name="keywords" content="pizzas, ingredients, price, image">
+    <link rel="stylesheet" type="text/css" href="CSSformat/style.css"/>   
+    <link rel="icon" href="Images/logo.webp" type="image/gif" sizes="16x16">
     <title>Menu - Pizzeria Italiana</title>
-    <link rel="stylesheet" href="CSSformat/style.css">
 </head>
 <body>
     <header>
@@ -20,6 +24,7 @@
         <section>
             <h2>Pizzas</h2>
             <table>
+                <thead>
                 <tr>
                     <th>Pizza</th>
                     <th>Ingredients</th>
@@ -50,10 +55,20 @@
                     <td>&euro;12</td>
                     <td><img src="Images/patate.jpg" alt="Pizza Patate" width="100"></td>
                 </tr>
+                </thead>
             </table>
+        </section>
+        <section class="videoContent">
+            <h2>Video from mp4 video file</h2>
+            <video controls loop width="300" height="369">
+                <source src="Video/food.mp4" type="video/mp4" />
+                Your browser does not support HTML5 Video
+            </video>
         </section>
     </main>
     <footer>
+        <a id="bottom"></a>
+        <a href="#top">Go to Page top</a>
 
 
 

@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: wheat;
 }
 
 header{
@@ -15,14 +15,15 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;  
-    border-bottom: 3px solid orange;
+    border: 5px solid red;
+    
 }
 
 nav{
     background-color: rgb(5, 168, 60);
-    padding: 10px;
+    padding: 2px;
     width: 100%;
-    border-radius: 10px;
+    border: 5px solid red;
 }
 
 nav ul {
@@ -58,32 +59,20 @@ main {
     padding: 20px;
 }
 
-aside {
-    width: 250px;
-    padding: 15px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+aside ul li a {
+    color: red;
+    text-decoration: none;
+}
+aside ul li {
+    list-style-type: none;
+}
+aside{ 
+    border: 5px solid ;
+    width: 18.5%;
     float: right;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-aside h2 {
-    font-size: 18px;
-    color: #b22222;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #b22222;
-    padding-bottom: 5px;
-}
 
-aside section {
-    font-size: 14px;
-    color: #333;
-    line-height: 1.5;
-    padding: 10px;
-}
 
 section {
     font-family: Verdana;
@@ -99,14 +88,89 @@ section {
 
 .logo {
     height: 80px;
+    float: left;
+    padding: 3px;
+    background-color: red;
 }
 
 footer {
-    background-color: #b22222;
-    padding: 10px;
-    color: white;
-    text-align: center;
+    padding: 0;
+    margin: 0;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
+    background-color: red;
+    align-items: center;
+    color:  white;
+    text-align: center;
+    list-style: none;
+
 }
+
+.videoContent {
+    float: right;
+    width: 150%;
+    border: 2px solid white;
+    max-height: 450px;
+    min-height: 450px;
+    overflow: auto;
+}
+.required{
+    font-weight: bold;
+    color: red;
+}
+.label{
+    float: left;
+    width: 112px;
+    padding-right: 10px;
+    text-align: right;
+}
+.input{
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 220px;
+}
+.input[type="radio"]
+{
+    width: 10px;
+}
+.input[type="checkbox"]
+{
+    width: 15px;
+}
+#button, #reset{
+    margin-top: 5em;
+    width: 8em;
+    background-color: orange;
+    border: 2px solid black;
+}
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bottom{
+
+}
+
+table{
+    width: 80%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: x-large;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+th,td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+

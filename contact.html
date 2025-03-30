@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pizza Restaurant">
+    <meta name="keywords" content="location, details, map">
+    <link rel="stylesheet" type="text/css" href="CSSformat/style.css"/>   
+    <link rel="icon" href="Images/logo.webp" type="image/gif" sizes="16x16">
     <title>Contact Us - Pizzeria Italiana</title>
-    <link rel="stylesheet" href="CSSformat/style.css">
 </head>
 <body>
     <header>
@@ -17,11 +21,46 @@
         </nav>
     </header>
     <main>
-        
+        <section>
+            <h3>Please enter the following information: </h3>
+
+            <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+                <label for="first_name">First name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="johndoe@example.com">
+                <br>
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender1" name="gender1" value="male">Male 
+                <input type="radio" id="gender2" name="gender2" value="Female">Female <br>
+
+                <label for="internet"> Heard of us:</label>
+                <fieldset>
+                    <input type="checkbox" id="internet" name="internet" value="internet" checked>Internet <br>
+                    <input type="checkbox" class="marginl" id="hearr" name="paper" value="paper" checked>Newspaper <br>
+                    <input type="checkbox" class="marginl" id="hear" name="friend" value="friend" checked>Friend <br>
+                </fieldset>
+                <br>
+                <label for="message">Query : </label>
+
+                <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 
+                200 characters" data-maxlength="200"></textarea> <br>
+
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+
+            </form>
+            <p style="margin-left: 138px"><span class="required">*</span> <em> indicates a required field </em></p>
+        </section>
         
         <section>
             <h2>Our Contact Details</h2>
-            <img src="Images/restaurant.jpg" width="200">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.4014034281445!2d-8.463897924265234!3d54.27916630452163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee84ef3fb4b37%3A0xc76b5b21d985fb79!2sAtlantic%20Technological%20University%20Sligo!5e0!3m2!1sen!2sie!4v1742918421240!5m2!1sen!2sie" 
+            width="600" height="450" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
             <p><strong>Address:</strong> 123 Pizza Street, Dublin, Ireland</p>
             <p><strong>Phone:</strong> 0891234567</p>
             <p><strong>Email:</strong> info@pizzeriaitaliana.com</p>
